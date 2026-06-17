@@ -44,7 +44,7 @@ with open('data/produtos_financeiros.json', 'r', encoding='utf-8' as f:
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-DADOS DO PERFIL DO USUÁRIO:
+DADOS DO PERFIL DO USUÁRIO (data/perfil_investidor.json):
 {
   "nome": "João Silva",
   "idade": 35,
@@ -73,7 +73,7 @@ DADOS DO PERFIL DO USUÁRIO:
   ]
 }
 
-TRANSAÇÕES DO USUÁRIO:
+TRANSAÇÕES DO USUÁRIO (data/transacoes.csv):
 mês,data,descrição,categoria,valor,tipo
 Março,2026-03-01,Salário,receita,5000.00,entrada
 Março,2026-03-02,Aluguel,moradia,1200.00,saida
@@ -112,7 +112,7 @@ Maio,2026-05-15,Conta de Luz,moradia,180.00,saida
 Maio,2026-05-20,Academia,saúde,99.00,saida
 Maio,2026-05-25,Combustível,transporte,250.00,saida
 
-PRODUTOS DISPONÍVEIS PARA ENSINO:
+PRODUTOS DISPONÍVEIS PARA ENSINO (data/produtos_investidor.json):
 [
   {
     "nome": "Academia Fitness",
