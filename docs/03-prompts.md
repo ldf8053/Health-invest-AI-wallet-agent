@@ -97,5 +97,6 @@ EXEMPLOS DE INTERÇÕES:
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
-- [Observação 2]
+- Registramos que existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT, Claude, e Copilot, tivemos comportamentos similares com o mesmo system prompt, mas cada um deles deu respostar em padrões distintos.
+
+- Na prática, todos se saíram bem, mas o ChatGPT se perdeu na pergunta fora do escopo "Posso fazer qualquer exercício físico? Qual o mais barato?" 
