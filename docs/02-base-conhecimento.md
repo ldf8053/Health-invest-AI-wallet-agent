@@ -45,7 +45,33 @@ with open('data/produtos_financeiros.json', 'r', encoding='utf-8' as f:
 
 ```text
 DADOS DO PERFIL DO CLIENTE:
-
+{
+  "nome": "João Silva",
+  "idade": 35,
+  "profissao": "Cuidador de Idosos",
+  "renda_mensal": 5000.00,
+  "perfil_investidor": "moderado",
+  "objetivo_principal": "Investir em saúde física e mental reduzindo custos de farmácia",
+  "custos_farmácia_atual": 250.00,
+  "aceita_risco": false,
+  "metas": [
+    {
+      "meta": "Investir mais em exercício físico",
+      "valor_necessario": 400.00,
+      "prazo": "2026-06"
+    },
+    {
+      "meta": "Investir em saúde mental",
+      "valor_necessario": 500.00,
+      "prazo": "2027-03"
+    },
+    {
+      "meta": "Contratar personal trainer",
+      "valor_necessario": 300.00,
+      "prazo": "2026-12"
+    }
+  ]
+}
 
 TRANSAÇÕES DO CLIENTE:
 
