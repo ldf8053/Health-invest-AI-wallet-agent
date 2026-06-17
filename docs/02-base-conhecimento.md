@@ -1,5 +1,8 @@
 # Base de Conhecimento
 
+## Prompt sugerido para esta etapa
+Preciso organizar a base de conhecimento do meu agente financeiro educativo em saúde. Tenho estes arquivos de dados em .json e .csv [Liste os arquivos]. Me ajude a: (1) entender o que cada arquivo contem, (2) decidir como usar cada um, e (3) criar um exemplo de contexto formatado para incluir no prompt.
+
 ## Dados Utilizados
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
