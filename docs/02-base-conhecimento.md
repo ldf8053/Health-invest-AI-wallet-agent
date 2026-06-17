@@ -44,7 +44,7 @@ with open('data/produtos_financeiros.json', 'r', encoding='utf-8' as f:
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-DADOS DO PERFIL DO CLIENTE:
+DADOS DO PERFIL DO USUÁRIO:
 {
   "nome": "João Silva",
   "idade": 35,
@@ -73,8 +73,44 @@ DADOS DO PERFIL DO CLIENTE:
   ]
 }
 
-TRANSAÇÕES DO CLIENTE:
+TRANSAÇÕES DO USUÁRIO:
+mês,data,descrição,categoria,valor,tipo
+Março,2026-03-01,Salário,receita,5000.00,entrada
+Março,2026-03-02,Aluguel,moradia,1200.00,saida
+Março,2026-03-03,Supermercado,alimentacao,450.00,saida
+Março,2026-03-05,Netflix,lazer,55.90,saida
+Março,2026-03-07,Farmácia,saúde,259.00,saida
+Março,2026-03-10,Restaurante,alimentacao,120.00,saida
+Março,2026-03-12,Uber,transporte,45.00,saida
+Março,2026-03-15,Conta de Luz,moradia,180.00,saida
+Março,2026-03-25,Combustível,transporte,250.00,saida
 
+
+mês,data,descrição,categoria,valor,tipo
+Abril,2026-04-01,Salário,receita,5000.00,entrada
+Abril,2026-04-02,Aluguel,moradia,1200.00,saida
+Abril,2026-04-03,Supermercado,alimentacao,500.00,saida
+Abril,2026-04-05,Netflix,lazer,55.90,saida
+Abril,2026-04-07,Farmácia,saúde,159.00,saida
+Abril,2026-04-10,Restaurante,alimentacao,120.00,saida
+Abril,2026-04-12,Uber,transporte,45.00,saida
+Abril,2026-04-15,Conta de Luz,moradia,180.00,saida
+Abril,2026-04-20,Academia,saúde,99.00,saida
+Abril,2026-04-25,Combustível,transporte,250.00,saida
+
+
+
+mês,data,descricao,categoria,valor,tipo
+Maio,2026-05-01,Salário,receita,5000.00,entrada
+Maio,2026-05-02,Aluguel,moradia,1200.00,saida
+Maio,2026-05-03,Supermercado,alimentacao,550.00,saida
+Maio,2026-05-05,Netflix,lazer,55.90,saida
+Maio,2026-05-07,Farmácia,saúde,109.00,saida
+Maio,2026-05-10,Restaurante,alimentacao,120.00,saida
+Maio,2026-05-12,Uber,transporte,45.00,saida
+Maio,2026-05-15,Conta de Luz,moradia,180.00,saida
+Maio,2026-05-20,Academia,saúde,99.00,saida
+Maio,2026-05-25,Combustível,transporte,250.00,saida
 
 PRODUTOS DISPONÍVEIS PARA ENSINO:
 [
