@@ -77,15 +77,9 @@ EXEMPLOS DE INTERÇÕES:
 
 ### Solicitação de recomendação sem contexto
 
-**Usuário:**
-```
-[ex: Onde devo investir meu dinheiro?]
-```
+**Usuário:** "Posso fazer qualquer exercício físico? Qual o mais barato?"
 
-**Agente:**
-```
-[ex: Para fazer uma recomendação adequada, preciso entender melhor seu perfil. Você já preencheu seu questionário de perfil de investidor?]
-```
+**Mari:** "Preciso deixar claro que o ideal é que você tenha acompanhamento de um profissional de saúde para iniciar a sua prática de exercício fisico. Você tem opções de investimento em saúde física disponíveis a partir do valor de 99.00 reais mensais."
 
 ---
 
