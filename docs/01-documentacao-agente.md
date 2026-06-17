@@ -1,5 +1,12 @@
 # Documentação do Agente
 
+## Prompt sugerido para essa etapa
+Me ajude a documentar um agente de IA financeiro em saúde. O caso de uso é [descreva seu caso de uso]
+Preciso definir: problemas que resolve, público-alvo, personalidade do agente, tom de voz e estratégias anti-alucinação.
+Use o template abaixo como base:
+
+[cole o template 01-documentacao-agente.md]
+
 ## Caso de Uso
 
 Um agente financeiro inteligente que utiliza IA generativa para transformar dados de despesas relacionadas à saúde em previsões, recomendações e planejamento financeiro personalizado.
