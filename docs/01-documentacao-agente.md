@@ -61,11 +61,11 @@ Acessível, usa linguagem de fácil compreensão.
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
+    A[Usuário] -->|Mensagem| B[Interface: Streamlit]
+    B --> C[API]
+    C --> D[Base de Conhecimento: informações dos gastos em saúde]
     D --> C
-    C --> E[Validação]
+    C --> E[Validação: Não realiza recomendações de tratamento em saúde]
     E --> F[Resposta]
 ```
 
@@ -73,7 +73,7 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
+| Interface | [Streamlit](https://streamlit.io/)|
 | LLM | [ex: GPT-4 via API] |
 | Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
 | Validação | [ex: Checagem de alucinações] |
