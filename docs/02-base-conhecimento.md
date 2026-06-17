@@ -20,7 +20,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-O produto x foi alimentado sobre as possibilidades de investimento em saúde, como aceso à academias e cuidados em saúde mental.
+Os produtos de saúde, o perfil do usuário e o as transações mensais foram alimentados: lista de academias, dados pessoais e transações de 3 meses foram adicionadas a esses 3 arquivos respectivamente.
 
 ---
 
