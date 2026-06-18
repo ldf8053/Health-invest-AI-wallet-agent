@@ -112,7 +112,7 @@ Maio,2026-05-15,Conta de Luz,moradia,180.00,saida
 Maio,2026-05-20,Academia,saúde,99.00,saida
 Maio,2026-05-25,Combustível,transporte,250.00,saida
 
-PRODUTOS DISPONÍVEIS PARA ENSINO (data/produtos_financeiros.json):
+PRODUTOS DISPONÍVEIS PARA ENSINO (data/produtos_saude.json):
 [
   {
     "nome": "Academia Fitness",
@@ -185,5 +185,6 @@ Produtos/Serviços em saúde a serem investidos:
 - Clínica (Terapia)
 - Box (Crossfit)
 - Assessoria (Corrida)
+- Personal Trainer (exercícios)
 
 ```
