@@ -52,7 +52,7 @@ DADOS DO PERFIL DO USUÁRIO (data/perfil_usuario.json):
   "profissao": "Cuidador de Idosos",
   "renda_mensal": 5000.00,
   "objetivo_principal": "Investir em saúde física e mental reduzindo custos de farmácia",
-  "custos_farmácia_atual": 250.00,
+  "custos_farmácia_inicial": 250.00,
   "aceita_risco": false,
   "metas": [
     {
