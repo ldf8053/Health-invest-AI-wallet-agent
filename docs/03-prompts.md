@@ -97,6 +97,6 @@ EXEMPLOS DE INTERÇÕES:
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- Registramos que existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT, Claude, e Copilot, tivemos comportamentos similares com o mesmo system prompt, mas cada um deles deu respostar em padrões distintos.
+- Existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT e Copilot, tive comportamentos similares com o mesmo system prompt, mas cada um deles deu respostas em padrões distintos, sendo que o Copilot deu a resposta mais curta e objetiva, e o ChatGPT ofereceu mais detalhes, principalmente já pontuando sobra a evolução dos gastos em farmácia.
 
-- Na prática, todos se saíram bem, mas o ChatGPT se perdeu na pergunta fora do escopo "Posso fazer qualquer exercício físico? Qual o mais barato?" 
+- Na prática, ambos apresentaram boas respostas para a pergunta fora de escopo "Qual medicamento genérico posso trocar pelo que tomo atualmente para economizar?", pois não recomendaram nada sobre medicamentos e se voltaram para a educação financeira. Destaco o copilot que estabeleceu um raciocínio entre o aumento do investimento em saúde física e mental e o possível impacto na redução dos gastos com medicamentos em farmácias.
