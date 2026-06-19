@@ -1,149 +1,241 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💪 Mari – Agente de IA para Educação Financeira em Saúde
 
-## Contexto
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Gemini](https://img.shields.io/badge/Google-Gemini%202.5%20Flash-green)
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Uma agente de Inteligência Artificial desenvolvida para promover educação financeira aplicada à saúde, oferecendo orientações personalizadas e seguras com base em uma base de conhecimento local.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+## 📌 Sobre o Projeto
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+**Mari** é uma educadora financeira em saúde construída com Python, Streamlit e Google Gemini.
 
----
+Seu propósito é ajudar usuários a compreenderem melhor seus gastos e investimentos em saúde, apresentando produtos e serviços disponíveis de maneira educativa, acessível e responsável.
 
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+A Mari foi projetada para responder **exclusivamente utilizando os dados presentes na pasta `data/`**, reduzindo o risco de alucinações e aumentando a confiabilidade das respostas.
 
 ---
 
-### 2. Base de Conhecimento
+## 🎯 Caso de Uso
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Muitas pessoas desejam investir mais em sua saúde, mas têm dificuldade em organizar seus gastos e conhecer serviços que podem contribuir para sua qualidade de vida.
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+A Mari auxilia o usuário a:
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- Entender seus custos atuais;
+- Conhecer produtos e serviços disponíveis;
+- Receber orientações personalizadas conforme seu perfil;
+- Desenvolver hábitos financeiros mais conscientes;
+- Planejar investimentos em saúde de forma sustentável.
 
 ---
 
-### 3. Prompts do Agente
+## ✨ Funcionalidades
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+- 💬 Chat interativo com Streamlit;
+- 🧠 Integração com Google Gemini 2.5 Flash;
+- 📊 Leitura automática dos dados do usuário;
+- 📁 Base de conhecimento local em JSON e CSV;
+- 🎯 Respostas contextualizadas com base no perfil do usuário;
+- 🛡️ Proteção contra alucinações através de regras no prompt;
+- 🤝 Linguagem simples e amigável.
 
 ---
 
-### 5. Avaliação e Métricas
+## 🛡️ Segurança e Confiabilidade
 
-Descreva como você avalia a qualidade do seu agente:
+A Mari foi desenvolvida seguindo princípios de IA responsável.
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+Ela:
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+- Utiliza apenas informações da base de conhecimento do projeto;
+- Não inventa preços ou serviços;
+- Assume quando não possui determinada informação;
+- Não recomenda tratamentos medicamentosos específicos;
+- Não prescreve exercícios ou terapias;
+- Incentiva sempre o acompanhamento por profissionais de saúde.
 
 ---
 
-## Ferramentas Sugeridas
+## 🏗️ Arquitetura
 
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
+```text
+Usuário
+    │
+    ▼
+Interface Streamlit
+    │
+    ▼
+Mari (Prompt + Contexto)
+    │
+    ▼
+Google Gemini 2.5 Flash
+    ▲
+    │
+Base de Conhecimento Local
 │
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+├── perfil_usuario.json
+├── transacoes.csv
+└── produtos_saude.json
 ```
 
 ---
 
-## Dicas Finais
+## 📂 Estrutura do Projeto
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+```text
+projeto-mari/
+│
+├── README.md
+│
+├── data/
+│   ├── perfil_usuario.json
+│   ├── transacoes.csv
+│   └── produtos_saude.json
+│
+├── docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
+│
+├── src/
+│   ├── app.py
+│   └── .env
+│
+└── assets/
+```
+
+---
+
+## 📚 Base de Conhecimento
+
+A Mari utiliza informações armazenadas em arquivos locais.
+
+| Arquivo | Formato | Função |
+|-----------|---------|---------|
+| `perfil_usuario.json` | JSON | Perfil e objetivos do usuário |
+| `transacoes.csv` | CSV | Histórico financeiro |
+| `produtos_saude.json` | JSON | Produtos e serviços disponíveis |
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- Python
+- Streamlit
+- Pandas
+- Google Gemini API
+- Python-dotenv
+- JSON
+- CSV
+
+---
+
+## 🚀 Como Executar
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/projeto-mari.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd projeto-mari
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure a chave da API
+
+Crie um arquivo `.env`:
+
+```env
+GOOGLE_API_KEY=sua_chave_aqui
+```
+
+### 5. Execute a aplicação
+
+```bash
+streamlit run src/app.py
+```
+
+---
+
+## 🧠 Funcionamento do Agente
+
+Ao receber uma pergunta, a Mari:
+
+1. Carrega os dados do usuário presentes em `perfil_usuario.json`;
+2. Lê o histórico financeiro em `transacoes.csv`;
+3. Consulta os produtos e serviços disponíveis em `produtos_saude.json`;
+4. Monta um contexto personalizado;
+5. Envia esse contexto juntamente com um System Prompt ao Gemini 2.5 Flash;
+6. Retorna uma resposta educativa, clara e baseada exclusivamente nas informações fornecidas.
+
+---
+
+## 💬 Exemplos de Perguntas
+
+- "Como estão meus gastos com saúde?"
+- "Quais serviços podem me ajudar a atingir meu objetivo?"
+- "Existe algum produto adequado para mim?"
+- "Como posso investir melhor na minha qualidade de vida?"
+- "Quanto já gastei com farmácia?"
+
+---
+
+## 🎓 Personalidade da Mari
+
+A Mari foi projetada para se comunicar como uma educadora financeira próxima e acolhedora.
+
+### Tom de voz
+
+- Amigável;
+- Motivador;
+- Didático;
+- Simples e acessível;
+- Consultivo e responsável.
+
+---
+
+## 📈 Diferenciais
+
+✅ Educação financeira aplicada à saúde
+
+✅ Respostas contextualizadas
+
+✅ IA Generativa com Google Gemini
+
+✅ Interface em Streamlit
+
+✅ Base de conhecimento local
+
+✅ Menor risco de alucinações
+
+✅ Recomendações responsáveis
+
+---
+
+## 🔒 Limitações
+
+A Mari **não substitui profissionais da saúde**.
+
+Suas respostas possuem finalidade exclusivamente educativa e são limitadas às informações disponíveis na base de conhecimento do projeto.
+
+---
+
+## 👩‍⚕️ Mari
+
+> "Investir em saúde também é investir em qualidade de vida. Estou aqui para te ajudar a tomar decisões mais conscientes e sustentáveis. 💙"
+
+---
+
+Projeto desenvolvido para o desafio de construção de agentes inteligentes utilizando IA Generativa.
