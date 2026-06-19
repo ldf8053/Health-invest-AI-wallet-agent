@@ -6,6 +6,8 @@
 
 Uma agente de Inteligência Artificial desenvolvida para promover educação financeira aplicada à saúde, oferecendo orientações personalizadas e seguras com base em uma base de conhecimento local.
 
+![Página inicial da Mari](images/pag_inicial.png)
+
 ## 📌 Sobre o Projeto
 
 **Mari** é uma educadora financeira em saúde construída com Python, Streamlit e Google Gemini.
